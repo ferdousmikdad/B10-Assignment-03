@@ -19,6 +19,7 @@
           extend: {
             colors: {
               phColorPr: "#ABEF5F",
+              phColorBl: '#212121',
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -34,11 +35,15 @@
     ></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+      .text-stroked{
+        -webkit-text-stroke: 1px #212121;
+      }
     </style>
   </head>
   <body class="bg-[#F4F4F4] font-manrope">
     <header
-      class="bg-gradient-to-t from-white via-white/100 to-white/0 pt-8 px-5"
+      class="bg-gradient-to-t from-white via-white/100 to-white/0 pt-8 px-5 lg:pb-20"
     >
       <nav class="max-w-[1170px] mx-auto flex items-center justify-between">
         <!-- Logo -->
@@ -95,7 +100,7 @@
       <section class="max-w-[1170px] mx-auto mt-8 lg:mt-14">
         <div class="flex flex-col items-center text-center">
           <img class="" src="assets/banner.png" alt="" />
-          <h1 class="font-extrabold text-3xl md:text-4xl lg:text-6xl max-w-5xl mt-5">
+          <h1 class="font-extrabold text-phColorBl text-stroked text-3xl md:text-4xl lg:text-6xl max-w-5xl mt-5">
             A barn house of this design has a
             striking appearance
           </h1>
@@ -115,7 +120,96 @@
         </div>
       </section>
     </header>
-    <main></main>
+
+    <!-- Main Section -->
+    <main>
+        <!-- About Us -->
+        <section class="max-w-[1170px] mx-auto">
+            <div class=" relative lg:flex items-start justify-between py-10 px-4">
+                <!-- content container -->
+                <div class="w-full md:w-[45%]">
+                    <!-- arrow-image -->
+                    <img class="absolute hidden lg:inline-block -top-4 -left-8" src="assets/Vector.png" alt="">
+                    <!-- about text -->
+                    <div class="flex items-center justify-center lg:justify-start md">
+                        <div class="w-36 bg-white rounded-full flex items-center justify-center px-6 py-2">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <p class="ml-2">About Us</p>
+                        </div>
+                    </div>
+                    <!-- text-box -->
+                    <div class="pt-4 text-center lg:text-left mb-4">
+                        <h2 class="font-bold text-phColorBl text-stroked text-3xl md:text-4xl pb-6">We design thoughtful, liveable spaces</h2>
+                        <p class=" text-sm md:text-base mb-6 md:mb-6">The barn house captivates with its blend of rustic charm and 
+                            modern sophistication, featuring weathered wood, sleek metal accents.
+                        </p>
+                        <!-- Card-1 -->
+                        <div class="bg-white mt-6 px-4 rounded-2xl flex items-center justify-center text-left">
+                            <div>
+                                <img class="w-24" src="assets/commercial.png" alt="">
+                            </div> 
+                            <div class="card-body">
+                              <h2 class="card-title font-extrabold text-phColorBl">Commercial</h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <!-- Card-2 -->
+                        <div class="bg-white mt-4 lg:mt-6 px-4 rounded-2xl flex items-center justify-center text-left">
+                            <div>
+                                <img class="w-24" src="assets/residential.png" alt="">
+                            </div> 
+                            <div class="card-body">
+                              <h2 class="card-title font-extrabold text-phColorBl">Resiential</h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image container -->
+                <div class="h-[230px] lg:h-full">
+                    <img class="w-full h-full object-cover rounded-xl" src="assets/Rectangle.png" alt=""></div>                
+            </div>  
+
+            <!-- Short-Info -->
+            <div class="bg-white rounded-2xl text-center py-12 mx-4 ">
+                <div class="grid lg:grid-cols-4 gap-10">
+                    <!-- col-1 -->
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="assets/review.svg" alt="">
+                        <h3 class="font-extrabold text-[#494949] tex-stroked text-4xl py-2">235+</h3>
+                        <p>Happy Client Review</p>
+                    </div>
+                    <!-- col-2 -->
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="assets/work.svg" alt="">
+                        <h3 class="font-extrabold text-[#494949] tex-stroked text-4xl py-2">50+</h3>
+                        <p>Work Departments</p>
+                    </div>
+                    <!-- col-3 -->
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="assets/client.svg" alt="">
+                        <h3 class="font-extrabold text-[#494949] tex-stroked text-4xl py-2">30k+</h3>
+                        <p>Our Happy Client</p>
+                    </div>
+                    <!-- col-4 -->
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="assets/staff.svg" alt="">
+                        <h3 class="font-extrabold text-[#494949] tex-stroked text-4xl py-2">307+</h3>
+                        <p>Staff Members</p>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="max-w-[1170px] mx-auto">
+           
+        </section>
+
+        <!--  -->
+        <section>
+            <h2>Another </h2>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
