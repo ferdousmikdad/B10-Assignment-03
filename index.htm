@@ -1,9 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B10-Assignment-03</title>
+    <!-- DaisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              phColorPr: "#ABEF5F",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font-Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f788a65d9b.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+    </style>
   </head>
-  <body></body>
+  <body class="bg-[#F4F4F4] font-manrope">
+    <header
+      class="bg-gradient-to-t from-white via-white/100 to-white/0 pt-8 px-5"
+    >
+      <nav class="max-w-[1170px] mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a class="flex items-center" href="">
+            <i
+              class="fa-solid fa-arrow-right-long -rotate-45 mr-2 bg-phColorPr rounded-full p-2"
+            ></i>
+            <h3 class="text-3xl font-extrabold hover:text-phColorPr">
+              Rinterio
+            </h3>
+          </a>
+        </div>
+
+        <!-- nav-lists -->
+        <div class="hidden lg:flex items-center">
+          <ul
+            tabindex="0"
+            class="flex items-center text-gray-500 menu menu-horizontal px-1"
+          >
+            <li class="mr-2 font-extrabold text-lg text-gray-900">
+              <a href="">Home</a>
+            </li>
+            <li class="mr-2"><a href="">Services</a></li>
+            <li class="mr-2"><a href="">Portfolio</a></li>
+            <li class="mr-2"><a href="">Blogs</a></li>
+            <li class="mr-2"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+    <!-- nav-btn and Mobile Menu Toggle Button Container -->
+        <div class="flex items-center space-x-4">
+        <!-- nav-btn -->
+        <div class="hidden md:flex items-center">
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass mr-2 bg-white text-gray-700 border rounded-full p-4 hover:bg-gray-200"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping mr-2 bg-white text-gray-700 border rounded-full p-4 hover:bg-gray-200"></i>
+          </a>
+          <button class="bg-phColorPr rounded-full py-2 px-4 ml-2 font-extrabold text-xl border border-phColorPr hover:bg-[#D4F7AE] hover:border hover:border-phColorPr">
+            Book Consult
+            <i class="fa-solid fa-arrow-right-long -rotate-45 bg-gray-900 text-white rounded-full p-2"></i>
+          </button>
+        </div>
+  
+        <!-- Mobile Menu Toggle Button -->
+        <div class="lg:hidden">
+          <i class="fa-solid fa-bars bg-white text-gray-700 border rounded-full p-4 hover:bg-gray-200 cursor-pointer"></i>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="max-w-[1170px] mx-auto border mt-14">
+        <div class="flex flex-col items-center text-center">
+          <img class="" src="assets/banner.png" alt="" />
+          <h1 class="font-extrabold text-6xl max-w-5xl mt-5">
+            A barn house of this design has a <br />
+            striking appearance
+          </h1>
+          <p class="max-w-4xl font-medium mt-6">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button
+            class="bg-[#D4F7AE] text-xl rounded-full p-2 pl-4 font-extrabold border border-phColorPr hover:bg-[#e4ffc7] hover:border hover:border-phColorPr my-12"
+          >
+            View Details
+            <i
+              class="fa-solid fa-arrow-right-long -rotate-45 bg-phColorPr text-gray-950 rounded-full p-2"
+            ></i>
+          </button>
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
