@@ -35,10 +35,6 @@
     ></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
-      .text-stroked{
-        -webkit-text-stroke: 1px #212121;
-      }
     </style>
   </head>
   <body class="bg-[#F4F4F4] font-manrope">
@@ -52,7 +48,7 @@
             <i
               class="fa-solid fa-arrow-right-long -rotate-45 mr-2 bg-phColorPr rounded-full p-2"
             ></i>
-            <h3 class="text-3xl font-extrabold hover:text-phColorPr">
+            <h3 class="text-3xl font-extrabold text-phColorBl hover:text-phColorPr">
               Rinterio
             </h3>
           </a>
@@ -100,7 +96,7 @@
       <section class="max-w-[1170px] mx-auto mt-8 lg:mt-14">
         <div class="flex flex-col items-center text-center">
           <img class="" src="assets/banner.png" alt="" />
-          <h1 class="font-extrabold text-phColorBl text-stroked text-3xl md:text-4xl lg:text-6xl max-w-5xl mt-5">
+          <h1 class="font-extrabold text-phColorBl stroke-black text-3xl md:text-4xl lg:text-6xl max-w-5xl mt-5">
             A barn house of this design has a
             striking appearance
           </h1>
@@ -139,7 +135,7 @@
                     </div>
                     <!-- text-box -->
                     <div class="pt-4 text-center lg:text-left mb-4">
-                        <h2 class="font-bold text-phColorBl text-stroked text-3xl md:text-4xl pb-6">We design thoughtful, liveable spaces</h2>
+                        <h2 class="font-bold text-phColorBl stroke-black text-3xl md:text-4xl pb-6">We design thoughtful, liveable spaces</h2>
                         <p class=" text-sm md:text-base mb-6 md:mb-6">The barn house captivates with its blend of rustic charm and 
                             modern sophistication, featuring weathered wood, sleek metal accents.
                         </p>
@@ -172,7 +168,7 @@
 
             <!-- Short-Info -->
             <div class="bg-white rounded-2xl text-center py-12 mx-4 ">
-                <div class="grid lg:grid-cols-4 gap-10">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
                     <!-- col-1 -->
                     <div class="flex flex-col justify-center items-center">
                         <img src="assets/review.svg" alt="">
@@ -200,15 +196,51 @@
                 </div>
             </div>
         </section>
-        <!--  -->
-        <section class="max-w-[1170px] mx-auto">
-           
+
+        <!-- How We Wroks -->
+        <section class="max-w-[1170px] mx-auto py-8 lg:py-20">
+            <div class="flex flex-col items-center justify-center">
+                <div class="bg-white rounded-full flex items-center justify-center px-6 py-2 mb-4">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <p class="ml-2">How We Works</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-extrabold text-3xl lg:text-4xl text-phColorBl stroke-black mb-6">Our Works Process</h3>
+                    <p class="mx-8 lg:max-w-3xl text-base lg:text-lg">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+            </div>
+
+            <!-- Work Process card -->
+            <div class="py-8 mx-4 ">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- col-1 -->
+                    <div class="bg-[#E7C1D3] p-6 rounded-xl">
+                        <img src="assets/concept.png" alt="">
+                        <h3 class="font-extrabold text-xl py-2">Concept</h3>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <!-- col-2 -->
+                    <div class="bg-[#EFDA6E] p-6 rounded-xl">
+                        <img src="assets/flow-chart.png" alt="">
+                        <h3 class="font-extrabold text-xl py-2">Design Process</h3>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <!-- col-3 -->
+                    <div class="bg-[#A4DAC3] p-6 rounded-xl">
+                        <img src="assets/vision.png" alt="">
+                        <h3 class="font-extrabold text-xl py-2">Supervision</h3>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <!-- col-4 -->
+                    <div class="bg-[#77AAEA] p-6 rounded-xl">
+                        <img src="assets/budget-planning.png" alt="">
+                        <h3 class="font-extrabold text-xl py-2">Budget Planning</h3>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>  
+                </div>
+            </div>
         </section>
 
-        <!--  -->
-        <section>
-            <h2>Another </h2>
-        </section>
     </main>
     <footer></footer>
   </body>
